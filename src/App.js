@@ -85,10 +85,12 @@ class App extends Component {
             <img src={logo} className="App-logo" alt="logo" />
           </div>
           <h2>React Oppgaveliste</h2>
+          <div className = "messages">
+            {this.state.errorMessage && <span className='error'>{this.state.errorMessage}</span>}
+            {this.state.message && <span className='success'>{this.state.message}</span>}
+          </div>
         </header>
         <div className="Todo-App">
-          {this.state.errorMessage && <span className='error'>{this.state.errorMessage}</span>}
-          {this.state.message && <span className='success'>{this.state.message}</span>}
           <TodoForm
             handleInputChange={this.handleInputChange} 
             currentTodo={this.state.currentTodo}

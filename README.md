@@ -13,4 +13,3 @@ En applikasjon for å ha oversikt over alle oppgavene du trenger å gjøre. Med 
 Kommandoen yarn/npm start starter opp applikasjonen.
 
 Kos dere!
-
