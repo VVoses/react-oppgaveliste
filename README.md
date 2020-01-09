@@ -1,6 +1,8 @@
 ##React Oppgaveliste
 
-I dette prosjektet ligger det en applikasjon der du kan legge til oppgaver du trenger å gjøre. Når du har lagt til oppgaver kan du:
+En applikasjon for å ha oversikt over alle oppgavene du trenger å gjøre. Med react-oppgaveliste kan du:
+    
+    Legge til oppgaver
 
     Markere at de har blitt gjort
 
