@@ -1,3 +1,7 @@
+@-webkit-keyframes scale-in-hor-center{0%{-webkit-transform:scaleX(0);transform:scaleX(0);opacity:1}100%{-webkit-transform:scaleX(1);transform:scaleX(1);opacity:1}}@keyframes scale-in-hor-center{0%{-webkit-transform:scaleX(0);transform:scaleX(0);opacity:1}100%{-webkit-transform:scaleX(1);transform:scaleX(1);opacity:1}}
+@-webkit-keyframes scale-out-horizontal{0%{-webkit-transform:scaleX(1);transform:scaleX(1);opacity:1}100%{-webkit-transform:scaleX(0);transform:scaleX(0);opacity:1}}@keyframes scale-out-horizontal{0%{-webkit-transform:scaleX(1);transform:scaleX(1);opacity:1}100%{-webkit-transform:scaleX(0);transform:scaleX(0);opacity:1}}
+@-webkit-keyframes tracking-in-contract{0%{letter-spacing:1em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}@keyframes tracking-in-contract{0%{letter-spacing:1em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}
+
 .App {
   text-align: center;
 }
@@ -9,11 +13,12 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 10s linear;
+    animation: tracking-in-contract 5s;
   }
 }
 
 .App-header {
+  animation: tracking-in-contract 1s;
   background-color: #282c34;
   min-height: 50vh;
   display: flex;
@@ -36,6 +41,7 @@
   color: #61dafb;
 }
 
+
 @keyframes App-logo-spin {
   0% {
     transform: skew(0deg);
@@ -51,10 +57,11 @@
 
   75% {
     transform: skew(-89deg);
-  }
+  } 
 }
 
 .Todo-App {
+  animation: scale-in-hor-center 1s;
   padding-top: 20px;
   display: inline-block;
   text-align: left;
@@ -69,12 +76,17 @@ ul {
 }
 
 li {
+  padding: 5px 10px;
   list-style-type: none;
   width: 100%;
   height: auto;
   overflow-wrap: break-word;
   word-wrap: break-word;
   white-space: normal !important;
+}
+
+.TodoItem {
+  background-color: #282c34;
 }
 
 .error {
@@ -94,6 +106,7 @@ li span.delete-item {
 }
 
 span.delete-item button {
+  animation: scale-in-hor-center;
   background-color: transparent;
   border: none;
   text-decoration: none;
@@ -110,5 +123,4 @@ li:hover span.delete-item {
   background-color: transparent;
   padding-left:2px;
   padding-right:2px;
-  outline: hidden;
 }
