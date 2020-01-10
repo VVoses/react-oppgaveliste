@@ -15,6 +15,6 @@ Med react-oppgaveliste kan du:
 
 For å starte applikasjonen er det bare å bruke kommandoen: 
 
-    yarn start 
+    npm start 
 
 Kos dere!
