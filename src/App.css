@@ -1,9 +1,134 @@
-@-webkit-keyframes scale-in-hor-center{0%{-webkit-transform:scaleX(0);transform:scaleX(0);opacity:1}100%{-webkit-transform:scaleX(1);transform:scaleX(1);opacity:1}}@keyframes scale-in-hor-center{0%{-webkit-transform:scaleX(0);transform:scaleX(0);opacity:1}100%{-webkit-transform:scaleX(1);transform:scaleX(1);opacity:1}}
-@-webkit-keyframes scale-out-horizontal{0%{-webkit-transform:scaleX(1);transform:scaleX(1);opacity:1}100%{-webkit-transform:scaleX(0);transform:scaleX(0);opacity:1}}@keyframes scale-out-horizontal{0%{-webkit-transform:scaleX(1);transform:scaleX(1);opacity:1}100%{-webkit-transform:scaleX(0);transform:scaleX(0);opacity:1}}
-@-webkit-keyframes tracking-in-contract{0%{letter-spacing:1em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}@keyframes tracking-in-contract{0%{letter-spacing:1em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}
+@-webkit-keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes scale-out-horizontal {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
+}
+@keyframes scale-out-horizontal {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 
 .App {
   text-align: center;
+}
+
+.Logo {
+  position: static;
 }
 
 .App-logo {
@@ -41,14 +166,13 @@
   color: #61dafb;
 }
 
-
 @keyframes App-logo-spin {
   0% {
     transform: skew(0deg);
   }
 
   25% {
-    transform: skew(89deg)
+    transform: skew(89deg);
   }
 
   50% {
@@ -57,14 +181,13 @@
 
   75% {
     transform: skew(-89deg);
-  } 
+  }
 }
 
 .Todo-App {
   animation: scale-in-hor-center 1s;
   padding-top: 20px;
   display: inline-block;
-  text-align: left;
 }
 
 input {
@@ -76,6 +199,7 @@ ul {
 }
 
 li {
+  text-align: left;
   padding: 5px 10px;
   list-style-type: none;
   width: 100%;
@@ -89,12 +213,20 @@ li {
   background-color: #282c34;
 }
 
+.messages {
+  padding: 2px;
+  display: block;
+  border: white;
+}
+
 .error {
-  color:red
+  animation: scale-in-center 0.1s;
+  color: red;
 }
 
 .success {
-  color: green
+  animation: scale-in-center 0.1s;
+  color: green;
 }
 
 .Logo {
@@ -106,7 +238,7 @@ li span.delete-item {
 }
 
 span.delete-item button {
-  animation: scale-in-hor-center;
+  animation: scale-in-hor-center 1s;
   background-color: transparent;
   border: none;
   text-decoration: none;
@@ -119,8 +251,9 @@ li:hover span.delete-item {
 
 .Footer button {
   border: hidden;
-  font-weight:bold;
+  font-weight: bold;
+  align-items: center;
   background-color: transparent;
-  padding-left:2px;
-  padding-right:2px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
