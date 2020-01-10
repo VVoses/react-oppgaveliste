@@ -103,7 +103,7 @@ class App extends Component {
             <img src={logo} className="App-logo" alt="logo" />
           </div>
           <div className="Info-box">
-            <h2 className = "Header-text">React Oppgaveliste</h2>
+            <h2 className="Header-text">React Oppgaveliste</h2>
             <div className="messages">
               {this.state.errorMessage && !this.state.message && (
                 <span className="error">{this.state.errorMessage}</span>
