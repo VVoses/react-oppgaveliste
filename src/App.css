@@ -157,31 +157,8 @@
   font-size: calc(10px + 2vmin);
 }
 
-.App-header messages {
-  position: static;
-  padding: 20px;
-}
-
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  0% {
-    transform: skew(0deg);
-  }
-
-  25% {
-    transform: skew(89deg);
-  }
-
-  50% {
-    transform: skew(0deg);
-  }
-
-  75% {
-    transform: skew(-89deg);
-  }
 }
 
 .Todo-App {
@@ -214,9 +191,7 @@ li {
 }
 
 .messages {
-  padding: 2px;
-  display: block;
-  border: white;
+  padding: 20px;
 }
 
 .error {
@@ -256,4 +231,8 @@ li:hover span.delete-item {
   background-color: transparent;
   padding-left: 2px;
   padding-right: 2px;
+}
+
+.Header-text {
+  position: static;
 }

@@ -13,8 +13,7 @@ export class Router extends Component {
 
     handleLinkClick = (route) => {
         this.setState({route})
-        // eslint-disable-next-line no-restricted-globals
-        history.pushState(null, '', route)
+        window.history.pushState(null, '', route)
     }
 
     static childContextTypes = {
