@@ -8,7 +8,6 @@ export class Link extends Component {
     }
 
     handleClick = (evt) => {
-        evt.preventDefault()
         this.context.linkHandler(this.props.to)
     }
 
